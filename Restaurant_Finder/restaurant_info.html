@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng,gr">
+<head>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div data-role="homepage" id="homepage">
+  <div data-role="header">
+    <img src = "logo.png" width = "100%">
+    <div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="home_page.html" data-icon="home" rel="external">Αρχική</a></li>
+        <li><a href="#SalesPage" data-icon="star" rel="external">Προσφορές</a></li>
+        <li><a href="contact_us.html" data-icon="info" rel="external">Επικοινωνία</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <h3>Ανατολή</h3>
+        Ανδριανού 120<br>
+        <br>Πλάκα, Αθήνα<br>
+        <br>T.K. 154 65<br>
+      </div>
+      <div class="ui-grid-b">
+        <img src="anatoli.jpg">
+      </div>
+    </div>
+  </div>
+  <div data-role="content">
+  <button href='#' id="myButton" class="ui-btn ui-icon-search ui-btn-icon-left">Βρείτε μας στο Google Maps</button>
+  <div id="myDiv" style="display: none;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3145.1843194674393!2d23.7276361!3d37.9728276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd17d23347eb%3A0x43f42a0c813661ea!2sAdrianoy%20120%2C%20Athina%20105%2058!5e0!3m2!1sen!2sgr!4v1673867462001!5m2!1sen!2sgr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <script>
+    var button = document.getElementById("myButton");
+    var div = document.getElementById("myDiv");
+
+    button.addEventListener("click", function() {
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    });
+  </script>
+  <a href="#" class="ui-btn ui-icon-info ui-btn-icon-left">Τηλεφωνήστε μας</a>
+  <div data-role="collapsible">
+    <h4>Ώρες Λειτουργίας</h4>
+    <ul data-role="listview" data-insert="true">
+      <li>Δευτέρα-Παρασκευή 18:00-24:00 <br>
+        <br> Σάββατο 13:00-24:00 <br>
+        <br> Κυριακή 12:00-24:00
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<div data-role="footer">
+  <h2>Copyright Mpatila Dimitra &copy; 2022</h2>
+</div>
+</body>
+</html>

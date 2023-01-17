@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng,gr">
+<head>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div data-role="homepage" id="homepage">
+  <div data-role="header">
+    <img src = "logo.png" width = "100%">
+    <div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="home_page.html" data-icon="home" class="ui-btn-active ui-state-persist" rel="external">Αρχική</a></li>
+        <li><a href="#SalesPage" data-icon="star" rel="external">Προσφορές</a></li>
+        <li><a href="contact_us.html" data-icon="info" rel="external">Επικοινωνία</a></li>
+      </ul>
+    </div>
+    <div data-role="content">
+      <h1>Επιλέξτε Κατηγορία</h1>
+      <ul data-role="listview" data filter="true" data-filter-placeholder="Αναζήτηση..." data-inset="true">
+        <li><a href="choose_restaurant.html" rel="external">
+          <img src="burger.jpg">Fast Food
+        </a>
+        </li>
+        <li><a href="choose_restaurant.html" rel="external">
+          <img src="pizza.jpg">Pizza
+        </a>
+        </li>
+        <li><a href="choose_restaurant.html" rel="external">
+          <img src="bar_restaurant.jpg">Bar-Restaurant
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div data-role="footer">
+  <h2>Copyright Mpatila Dimitra &copy; 2022</h2>
+</div>
+</body>
+</html>

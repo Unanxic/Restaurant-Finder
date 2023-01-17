@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng,gr">
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div data-role="homepage" id="homepage">
+    <div data-role="header">
+        <img src = "logo.png" width = "100%">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="home_page.html" data-icon="home" rel="external">Αρχική</a></li>
+                <li><a href="#SalesPage" data-icon="star" rel="external">Προσφορές</a></li>
+                <li><a href="contact_us.html" data-icon="info" class="ui-btn-active ui-state-persist" rel="external">Επικοινωνία</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <form method="post" action="">
+        <div class="ui-field-contain">
+            <label for="fname">Όνομα:</label>
+            <input type="text"name="fname" id="fname">
+            <label for="lname">Επώνυμο:</label>
+            <input type="text"name="lname" id="lname">
+            <label for="email">Email:</label>
+            <input type="text"name="email" id="email">
+            <label for="telephone">Τηλέφωνο:</label>
+            <input type="text"name="telephone" id="telephone">
+            <fieldset class="ui-field-contain">
+                <label for="reason">Λόγος Επικοινωνίας:</label>
+                <select name="reason" id="reason">
+                    <option value="choose">Eπιλέξτε...</option>
+                    <option value="del">Delivery</option>
+                    <option value="bad">Κακό φαγητό</option>
+                    <option value="wrong">Λάθος φαγητό</option>
+                    <option value="else">Κάτι άλλο...</option>
+                </select>
+                <textarea name="textarea" id="textarea"></textarea>
+            </fieldset>
+        </div>
+            <input type="submit" onclick="refresh()"  value="Υποβολή" data-icon="check" data-incopos="right" data-inline="true">
+            <!--Φτιάχνουμε ένα script για να κάνει refresh η σελίδα όταν
+            πατάμε "Υποβολή" και να μην μας πετάει "Error loading page" !-->
+            <script>
+                    function refresh(){
+                        window.location.href="contact_us.html";
+                    }
+            </script>
+        </form>
+    </div>
+</div>
+<div data-role="footer">
+    <h2>Copyright Mpatila Dimitra &copy; 2022</h2>
+</div>
+</body>
+</html>
